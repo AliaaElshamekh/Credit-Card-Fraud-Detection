@@ -1,0 +1,15 @@
+This prediction of fraud data was based on model 1 provided in the report 
+which is based on the random forest classifier 
+The feature selection is based on the function in python called RFECV (Recursive Feature Elimination
+with Cross Validation) which I have assigned for it another random forest classifier to select the important features 
+based on the f score of each model
+I applied a random search algorithm to find out the optimum hyper parameters which gives me the best f score.
+
+This model gives me the highest the f score among the proposed three models 
+Moreover, It has had a reasnable execution time on the 500 K dataset
+In addition, This classifier is not affected b the problem of imbalanced dataset
+
+for predicitng the class of the transactions in the test.csv , I have loaded the file in python, then retrieve the model that has
+the optimum hyper parameter based on highest f score.
+Then apply the pre processing steps on the test dataset.
+After that, apply the predict function provided by python to predict the value of isFraud column.
